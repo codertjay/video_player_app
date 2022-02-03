@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     InkWell(
                       onTap: () {
-                        Get.to(() => VideoInfo());
+                        Get.to(() => const VideoInfo());
                       },
                       child: Icon(
                         Icons.arrow_forward,
@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ]),
               child: Container(
                 margin:
-                    EdgeInsets.only(left: 20, top: 25, bottom: 8, right: 10),
+                    const EdgeInsets.only(left: 20, top: 25, bottom: 8, right: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: color.AppColor.homePageContainerTextSmall,
                           fontSize: 25),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -203,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Stack(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 30),
+                    margin: const EdgeInsets.only(top: 30),
                     width: width,
                     height: 120,
                     decoration: BoxDecoration(
@@ -214,13 +214,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 40,
-                            offset: Offset(8, 10),
+                            offset: const Offset(8, 10),
                             color:
                                 color.AppColor.gradientSecond.withOpacity(0.3),
                           ),
                           BoxShadow(
                             blurRadius: 10,
-                            offset: Offset(-1, 5),
+                            offset: const Offset(-1, 5),
                             color:
                                 color.AppColor.gradientSecond.withOpacity(0.3),
                           ),
@@ -229,7 +229,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     height: 200,
                     width: width,
-                    margin: EdgeInsets.only(right: 200, bottom: 30),
+                    margin: const EdgeInsets.only(right: 200, bottom: 30),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       image: const DecorationImage(
